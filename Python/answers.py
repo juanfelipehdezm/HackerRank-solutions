@@ -36,3 +36,21 @@ def second_worst():
         print(just_second[_][1])
     return " "
 # second_worst()
+
+
+students_marks = {"Krishna": [67, 68, 69],
+                  "Arjun": [70, 98, 63],
+                  "Malika": [52, 56, 60]}
+
+
+def mean_marks(a_name):
+    """Print one line: The average of the marks obtained by the particular student correct to 2 decimal places."""
+
+    scores = students_marks[a_name]
+    total = 0
+    acum = 0
+    for score in scores:
+        total += score
+        acum += 1
+    return "{:.2f}".format(total/acum)
+# print(mean_marks("Malika"))
