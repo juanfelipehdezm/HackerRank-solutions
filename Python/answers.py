@@ -54,3 +54,35 @@ def mean_marks(a_name):
         acum += 1
     return "{:.2f}".format(total/acum)
 # print(mean_marks("Malika"))
+
+
+def hash_function():
+    """Given an integer, N , and N space-separated integers as input, create a tuple, t , of those  integers. Then compute and print the result of hash(t)."""
+    integer_list = map(int, input().split())
+    my_tup = tuple([num for num in integer_list])
+    return hash(my_tup)
+# print(hash_function())
+
+
+def split_and_join(line, x):
+    """ Join the string under any X parameter you desire """
+    return x.join(line.split())
+#print(split_and_join("This is a string", "-"))
+
+
+def mutate_string(string, position, character):
+    """ TASK
+      Read a given string, change the character at a given index and then print the modified string.
+        FUNCTION DESCRIPTION
+      Complete the mutate_string function in the editor below.
+
+      mutate_string has the following parameters:
+
+      string string: the string to change
+      int position: the index to insert the character at
+      string character: the character to insert
+      Returns string: the altered string"""
+    list_string = list(string)
+    list_string[position] = character
+    return "".join(list_string)
+#print(mutate_string("abrakadacra", 4, "8"))
