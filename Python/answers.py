@@ -65,7 +65,8 @@ def hash_function():
 
 
 def split_and_join(line, x):
-    """ Join the string under any X parameter you desire """
+    """ Join the string under any X parameter you desire 
+        x must be a string"""
     return x.join(line.split())
 #print(split_and_join("This is a string", "-"))
 
@@ -86,3 +87,44 @@ def mutate_string(string, position, character):
     list_string[position] = character
     return "".join(list_string)
 #print(mutate_string("abrakadacra", 4, "8"))
+
+
+def count_subString(string, sub_string):
+    """In this challenge, the user enters a string and a substring. You have to print the number of times that the substring occurs in the given string."""
+    string = string.upper()
+    sub_string = sub_string.upper()
+    appear = 0
+    for i in range(0, len(string)):
+        if string[i:i+len(sub_string)] == sub_string:
+            appear += 1
+    return "The substring appeared {} ".format(appear)
+#print(count_subString("ABCDCDC", "CDc"))
+
+
+def string_validator(s):
+    # This method checks if all the characters of a string are alphanumeric (a-z, A-Z and 0-9).
+    print(any(l.isalnum() for l in s))
+    # This method checks if all the characters of a string are alphabetical (a-z and A-Z).
+    print(any(l.isalpha() for l in s))
+    # This method checks if all the characters of a string are digits (0-9).
+    print(any(l.isdigit() for l in s))
+    # This method checks if all the characters of a string are lowercase characters (a-z).
+    print(any(l.islower() for l in s))
+    # This method checks if all the characters of a string are uppercase characters (A-Z).
+    print(any(l.isupper() for l in s))
+    return ""
+# print(string_validator("qA2"))
+
+
+def wrap(string, max_width):
+    """ You are given a string S and width w.
+        Your task is to wrap the string into a paragraph of width w."""
+    for i in range(0, len(string)+1, max_width):  # this FOR iterates for 4 in 4 bc of the third argument
+        result = string[i:i+max_width]
+        if len(result) == max_width:
+            print(result)
+        else:
+            return result
+
+
+print(wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4))
