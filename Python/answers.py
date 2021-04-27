@@ -125,6 +125,13 @@ def wrap(string, max_width):
             print(result)
         else:
             return result
+#print(wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4))
 
 
-print(wrap("ABCDEFGHIJKLIMNOQRSTUVWXYZ", 4))
+def title_case(s):
+    """You are asked to ensure that the first and last names of people begin with a capital letter in their passports. 
+    For example, alison heck should be capitalised correctly as Alison Heck. """
+    return s.title()
+
+
+#print(title_case("hola me llamo felipe"))
