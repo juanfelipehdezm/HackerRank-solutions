@@ -81,3 +81,19 @@ SELECT CASE
            ELSE 'Scalene'
        END AS type_of_triangule
 FROM TRIANGLES;
+
+/*Query the total population of all cities in CITY where District is California.*/
+SELECT SUM(population)
+FROM CITY
+WHERE District = " California";
+
+/*Query the average population for all cities in CITY, rounded down to the nearest integer.*/
+SELECT ROUND(AVERAGE(population))
+FROM CITY;
+
+/*Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard's 0 
+key was broken until after completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeros removed),
+and the actual average salary. Write a query calculating the amount of error (i.e.: actual-miscalculated average monthly salaries), and round it up to the next integer.*/
+
+SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY,'0',''))) /*The CEIL function takes to the next int. it works on MY-SQL*/
+FROM EMPLOYEES;                                      /*We replaced the 0 with "" to simulate the mistake made by samantha*/
