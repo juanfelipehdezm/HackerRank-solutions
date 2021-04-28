@@ -135,3 +135,11 @@ def title_case(s):
 
 
 #print(title_case("hola me llamo felipe"))
+
+def average_of_set(an_array):
+    # A set is an unordered collection of elements without duplicate entries.
+    my_set = set(an_array)
+    return sum(my_set)/len(my_set)
+
+
+print(average_of_set([154, 161, 167, 170, 171, 174, 176, 182]))
