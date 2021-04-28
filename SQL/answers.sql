@@ -97,3 +97,17 @@ and the actual average salary. Write a query calculating the amount of error (i.
 
 SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY,'0',''))) /*The CEIL function takes to the next int. it works on MY-SQL*/
 FROM EMPLOYEES;                                      /*We replaced the 0 with "" to simulate the mistake made by samantha*/
+
+
+/*We define an employee's total earnings to be their monthly (month*salary) worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee 
+table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. 
+Then print these values as 2 space-separated integers.*/
+
+SELECT (months*salary) AS earnings, count(*)
+FROM Employee
+WHERE (months*salary) = 
+    (
+    SELECT MAX(months*salary)
+    FROM Employee
+    )
+GROUP BY earnings;
