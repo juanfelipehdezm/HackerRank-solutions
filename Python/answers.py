@@ -142,4 +142,24 @@ def average_of_set(an_array):
     return sum(my_set)/len(my_set)
 
 
-print(average_of_set([154, 161, 167, 170, 171, 174, 176, 182]))
+#print(average_of_set([154, 161, 167, 170, 171, 174, 176, 182]))
+
+
+def use_Counter(lista):
+    from collections import Counter
+    #n_shoes = int(input("Number of shoes: "))
+    shoe_sizes = Counter(lista)
+    """ A Counter is a container that stores elements as dictionary keys, and their counts are stored as dictionary values."""
+    n_customer = int(input("Number of clientes: "))
+
+    earns = 0
+    print(shoe_sizes, "size : availability")
+    for n in range(n_customer):
+        size, price = map(int, input("desired sizes and prices: ").split())
+        if shoe_sizes[size]:
+            earns += price
+            shoe_sizes[size] -= 1
+    return earns
+
+
+print(use_Counter([2, 3, 4, 5, 6, 8, 7, 6, 5, 18]))
