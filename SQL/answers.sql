@@ -123,7 +123,7 @@ ON c.company_code = e.company_code
 GROUP BY c.company_code,c.founder
 ORDER BY c.company_code;
 
-/*https://www.hackerrank.com/challenges/weather-observation-station-19/submissions/code/21285306*/
+/*https://www.hackerrank.com/challenges/weather-observation-station-19/problem?h_r=profile*/
 SELECT 
     ROUND(SQRT(
         POWER(MAX(LAT_N)-MIN(LAT_N),2) + POWER(MAX(LONG_W)-MIN(LONG_W),2)
