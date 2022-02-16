@@ -129,3 +129,13 @@ SELECT
         POWER(MAX(LAT_N)-MIN(LAT_N),2) + POWER(MAX(LONG_W)-MIN(LONG_W),2)
         ),4)
 FROM STATION; 
+
+/*https://www.hackerrank.com/challenges/the-report/problem?isFullScreen=true*/
+SELECT
+  CASE WHEN g.grade < 8 THEN NULL 
+  ELSE s.name END AS name, 
+       g.grade, s.marks
+FROM students AS s
+INNER JOIN grades AS g 
+ON s.marks BETWEEN g.min_mark AND g.max_mark
+ORDER BY g.grade DESC, name, s.marks;
