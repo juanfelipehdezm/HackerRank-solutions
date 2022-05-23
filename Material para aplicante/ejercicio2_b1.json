@@ -1,0 +1,87 @@
+{"ventas": [
+	{
+		"tiempo": "anyo1-q1",
+		"ValorVenta": 3000,
+		"Cantidad": 3
+	},
+	{
+		"tiempo": "anyo1-q2",
+		"ValorVenta": 3200,
+		"Cantidad": 3
+	},
+	{
+		"tiempo": "anyo1-q3",
+		"ValorVenta": 4500,
+		"Cantidad": 5
+	},
+	{
+		"tiempo": "anyo1-q4",
+		"ValorVenta": 5000,
+		"Cantidad": 5
+	},
+	{
+		"tiempo": "anyo2-q1",
+		"ValorVenta": 10000,
+		"Cantidad": 9
+	},
+	{
+		"tiempo": "anyo2-q2",
+		"ValorVenta": 10000,
+		"Cantidad": 8
+	},
+	{
+		"tiempo": "anyo2-q3",
+		"ValorVenta": 20000,
+		"Cantidad": 5
+	},
+	{
+		"tiempo": "anyo2-q4",
+		"ValorVenta": 10000,
+		"Cantidad": 2
+	},
+	{
+		"tiempo": "anyo3-q1",
+		"ValorVenta": 3000,
+		"Cantidad": 14
+	},
+	{
+		"tiempo": "anyo3-q2",
+		"ValorVenta": 2000,
+		"Cantidad": 4
+	},
+	{
+		"tiempo": "anyo3-q3",
+		"ValorVenta": 2000,
+		"Cantidad": 13
+	},
+	{
+		"tiempo": "anyo3-q4",
+		"ValorVenta": 2300,
+		"Cantidad": 1
+	},
+	{
+		"tiempo": "anyo4-q1",
+		"ValorVenta": 2000,
+		"Cantidad": 1
+	},
+	{
+		"tiempo": "anyo4-q2",
+		"ValorVenta": 3000,
+		"Cantidad": 5
+	},
+	{
+		"tiempo": "anyo4-q3",
+		"ValorVenta": 90000,
+		"Cantidad": 12
+	},
+	{
+		"tiempo": "anyo4-q4",
+		"ValorVenta": 52023,
+		"Cantidad": 14
+	},
+	{
+		"tiempo": "anyo5-q1",
+		"ValorVenta": 4000,
+		"Cantidad": 2
+	}
+]}
